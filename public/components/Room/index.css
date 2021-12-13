@@ -1,0 +1,316 @@
+/* button {
+    display: inline-block;
+    text-align: center;
+    margin: 0;
+} */
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Be+Vietnam+Pro&family=Lato&family=Outfit&display=swap');
+
+body {
+    margin: 1rem;
+    background: black;
+    min-height: 200px;
+    overflow: hidden;
+  }
+  
+  #left-image {
+    cursor: pointer;
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: 500px;
+    left: 270px;
+    transition: transform .2s ease-out; 
+  }
+
+  #left-image:hover {
+    transform: scale(1.5);
+  }
+
+  #right-image {
+    cursor: pointer;
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: 500px;
+    right: 270px;
+    transition: transform .2s ease-out; 
+  }
+
+  #right-image:hover {
+    transform: scale(1.5);
+  }
+
+
+  #container {
+    border: 5px solid #ccc;
+    overflow: hidden;
+    width: 980px;
+    height: 800px;
+    display:inline-block;
+    margin: auto;
+    overflow-x: hidden;
+    margin-top: 180px;
+    margin-bottom: 10px;
+    scroll-behavior: smooth;
+  }
+
+  .main {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .main #container .room {
+    position: absolute;
+    z-index: 1; 
+  }
+  .main #container #ukelele {
+    position: absolute;
+    z-index: 2; 
+    top: 110px;
+    left: 800px;
+  }
+  .main #container #ukelele:hover {
+    -webkit-filter: drop-shadow(12px 12px 7px rgba(0, 0, 0, 0.5));
+     filter: drop-shadow(12px 12px 7px rgba(0, 0, 0, 0.5));
+     cursor: pointer;
+  }
+  .main #container #journal {
+    position: absolute;
+    z-index: 2; 
+    top: 670px;
+    left: 390px;
+  }
+  .main #container #journal:hover {
+    -webkit-filter: drop-shadow(12px 12px 7px rgba(0, 0, 0, 0.5));
+     filter: drop-shadow(12px 12px 7px rgba(0, 0, 0, 0.5));
+     cursor: pointer;
+  }
+  .main #container #phone {
+    position: absolute;
+    z-index: 2; 
+    left: 1100px;
+    top: 550px;
+  }
+  .main #container #phone:hover {
+    -webkit-filter: drop-shadow(12px 12px 7px rgba(0, 0, 0, 0.5));
+     filter: drop-shadow(12px 12px 7px rgba(0, 0, 0, 0.5));
+     cursor: pointer;
+  }
+
+  .tool-bar {
+    position: absolute;
+    height: 80px;
+    width: 100%;
+    bottom: 0;
+    background-color: #202124;
+    z-index: 1;
+  }
+
+  /* .tool-bar {
+    display: flex;
+    flex-direction: row;
+  } */
+
+  .tool-bar #time {
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-size: 23px;
+    float: left;
+    margin-left: 30px;
+    margin-top: 25px;
+    z-index: 1;
+    color: white;
+  }
+
+  .tool-bar .on-icons #red-phone-icon {
+    width: 70px;
+    position: absolute;
+    top: 25px;
+    left: 873px;
+    /* display: inline-block; */
+    /* margin-left: 30px; */
+  }
+
+  .tool-bar .on-icons #video-icon {
+    width: 50px;
+    position: absolute;
+    top: 16px;
+    left: 750px;
+    /* display: inline-block; */
+    /* margin-left: 30px; */
+  }
+
+  .tool-bar .on-icons #mic-icon {
+    width: 50px;
+    position: absolute;
+    top: 16px;
+    left: 810px;
+    /* display: inline-block; */
+    /* margin-left: 30px; */
+  }
+
+  .tool-bar .off-icons #off-video-icon {
+    width: 50px;
+    position: absolute;
+    top: 16px;
+    left: 750px;
+    /* display: inline-block; */
+    /* margin-left: 30px; */
+  }
+
+  .tool-bar .off-icons #off-mic-icon {
+    width: 50px;
+    position: absolute;
+    top: 16px;
+    left: 810px;
+    /* display: inline-block; */
+    /* margin-left: 30px; */
+  }
+
+  /* .tool-bar .on-icons #red-phone-icon:hover {
+    cursor: pointer; */
+    /* display: inline-block; */
+    /* margin-left: 30px; }*/
+
+  .tool-bar .on-icons #video-icon:hover {
+    cursor: pointer;
+    /* display: inline-block; */
+    /* margin-left: 30px; */
+  }
+
+  /* .tool-bar .on-icons #mic-icon:hover {
+    cursor: pointer; */
+    /* display: inline-block; */
+    /* margin-left: 30px;} */
+
+  .tool-bar .off-icons #off-video-icon:hover {
+    cursor: pointer;
+    /* display: inline-block; */
+    /* margin-left: 30px; */
+  }
+
+  /* .tool-bar .off-icons #off-mic-icon:hover {
+    cursor: pointer;
+    /* display: inline-block; */
+    /* margin-left: 30px; }*/
+  
+  #pre {
+    width: 100%;
+    height: 200%;
+    /* opacity: 0.2; */
+    background-color: black;
+    z-index: 3;
+    top: 0;
+    position: absolute;
+  }
+
+  #text-here {
+    position: absolute;
+    color: white;
+    border-color:red;
+    border-width: 10px;
+    width: 500px;
+    top: 500px;
+    left: 680px;
+    z-index: 4;
+    font-family: 'Be Vietnam Pro', sans-serif;
+  }
+  #next-button {
+    z-index: 4;
+    position: absolute;
+    top: 600px;
+    left: 850px;
+    border-radius: 30px;
+    width: 100px;
+    height: 40px;
+    font-family: 'Be Vietnam Pro', sans-serif;
+    border-color: white;
+    border-style: double;
+    background-color: black;
+    color: white;
+    animation: fadeIn linear 4s;
+    -webkit-animation: fadeIn linear 4s;
+    -moz-animation: fadeIn linear 4s;
+    -o-animation: fadeIn linear 4s;
+    -ms-animation: fadeIn linear 4s;
+  }
+
+  @keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+  @-moz-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+  @-webkit-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+  @-o-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+  @-ms-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+
+  #next-button:hover {
+    border-color: black;
+    border-style: double;
+    background-color: white;
+    color: black;
+    cursor: pointer;
+  }
+
+  .hidden {
+    display: none;
+  }
+
+  make-hidden {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s 2s, opacity 2s linear;
+  }
+
+  /* #video {
+    position: absolute;
+    width: 540px;
+    height: 200px;
+    border: 5px solid #ccc;
+    background-color: black;
+    top: 20px;
+    left: 620px;
+  } */
+
+  .video-outer {
+    position: absolute;
+    width: 275px;
+    height: 180px;
+    border: 5px solid #ccc;
+    top: 20px;
+    left: 750px;
+    color: white;
+    text-align: center;
+    font-family:'Be Vietnam Pro', sans-serif;
+    font-size: 20px;
+  }
+
+  #video {
+    z-index: 1;
+  }
+
+  #disabled-text {
+    color: white;
+    font-family:'Be Vietnam Pro', sans-serif;
+    position: absolute;
+    top: 40px;
+    left: 50px;
+    z-index: 2;
+  }
+

@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Be+Vietnam+Pro&family=Lato&family=Outfit&display=swap');
+#desktop-container {
+    width: auto;
+    height: 900px;
+    background-color: turquoise;
+    border: 30px solid green;
+
+}
+
+.dock {
+    width: auto;
+    height: 70px;
+    background-color: red;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.dock #dock-app {
+    width: 50px;
+    height: 50px;
+    background-color: yellow;
+    margin-right:auto;
+    margin-left: auto;
+}
+
+#desktop-container h1 {
+    display: inline-block;
+    margin-right: 10px;
+    z-index: 2;
+}
+
+.apps {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    
+}
+
+.apps #app1 {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 180px;
+    left: 30px;
+}
+
+.apps #app2 {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 250px;
+    left: 30px;
+}
+
+.apps #app3 {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 320px;
+    left: 30px;
+}
+
+body {
+    background-color: #1099bb;
+    overflow: hidden;
+}
+
+.hide {
+    display: none;
+}
+
+.container .drop-targets .box1 {
+    width: 50px;
+    height: 50px;
+    background-color: blueviolet;
+}
+
+.drag-over {
+    border: dashed 3px red;
+}
+
+#link-room{
+    display: none;
+}
+
+#link-room.visible{
+    display:block;
+    border: 5px;
+    border-color: black;
+    background-color: red;
+}
+
+.desktop-container #cal-wallpaper {
+    z-index: 1;
+    object-fit: cover;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+.desktop-container #desktop-date{
+    position: absolute;
+    top: 17px;
+    right: 120px;
+    font-size: large;
+    font-family: 'Be Vietnam Pro', sans-serif;
+}
+.desktop-container #desktop-time{
+    position: absolute;
+    top: 17px;
+    right: 20px;
+    font-size: large;
+    font-family: 'Be Vietnam Pro', sans-serif;
+}
+
+#menu-bar {
+    position: absolute;
+    top: 5px;
+    background-color: whitesmoke;
+    opacity: 0.5;
+    width: 100%;
+    height: 40px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    
+
+}
+
+.loader-cursor {
+    cursor: wait;
+}
+
+#dock-bar {
+    position: absolute;
+    top:900px;
+    background-color: whitesmoke;
+    opacity: 0.5;
+    width: 80%;
+    height: 80px;
+    left: 100px;
+    right: 100px;
+    border-radius: 15px;
+
+
+}
+
+#zoom-call {
+    background-color: whitesmoke;
+    text-align: center;
+    width: 470px;
+    border-radius: 20px;
+    margin-right: auto;
+    margin-left: auto;
+    filter: drop-shadow(0 0 0.1rem grey);
+    font-family: 'Lato', sans-serif;
+    font-size: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 5px;
+    padding-left: 5px;
+    position: absolute;
+    right: 570px;
+    top: 500px;
+}
+
+#enter-call {
+    font-family: 'Lato', sans-serif;
+    color: white;
+    background-color: #2E74E3;
+    border-radius: 5px;
+    width: 200px;
+    height: 30px;
+    font-size: 12px;
+    outline: none;
+    border: none;
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+.hidden {
+    display: none;
+}
+
+#loader {
+    border: 5px solid gray;
+    border-radius: 50%;
+    border-top: 5px solid #2E74E3;
+    width: 20px;
+    height: 20px;
+    animation: spin 2s linear infinite;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }

@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Be+Vietnam+Pro&family=Lato&family=Open+Sans:wght@400;500&family=Outfit&display=swap');
+body {
+    font-family: 'Be Vietnam Pro', sans-serif;
+    overflow-x: hidden;
+}
+
+.room-nav {
+    height: 100px;
+    width: 100%;
+    background-color: rgb(27, 27, 27);
+    position: absolute;
+    top: 0;
+    margin-bottom: 5px;
+    margin-left: 0px;
+}
+
+.room-nav h1 {
+    color: white;
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-size: 70px;
+    margin-top: 0px;
+    text-align: center;
+}
+
+.room-nav:hover {
+    cursor: pointer;
+}
+
+.intro {
+    text-align: center;
+    margin-top: 150px;
+}
+
+
+
+.rate, .self-thoughts, .letter {
+    margin-top: 60px;
+    text-align: center;
+}
+
+.main .intro h1 {
+    font-family: 'Anton', sans-serif;
+    font-size: 90px;
+    margin-bottom: 20px;
+    width: 600px;
+    display: inline-block;
+    text-align: center;
+}
+
+.intro p {
+    text-align: center;
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.self-thoughts p {
+    display: inline-block;
+    text-align: left;
+    width: 600px;
+}
+
+#quote1, #quote2, #quote3, #quote4, #quote5  {
+    width: 610px;
+    height: 70px;
+    box-shadow: 12px 12px 2px 1px rgba(32, 153, 184, 0.527);
+    border-width: 2px;
+    border-style: solid;
+    border-color: black;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+
+}
+
+#quote6 {
+    width: 610px;
+    height: 90px;
+    box-shadow: 12px 12px 2px 1px rgba(32, 153, 184, 0.527);
+    border-width: 2px;
+    border-style: solid;
+    border-color: black;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+
+}
+
+.footer {
+    /* display: inline-block; */
+    margin-left: auto;
+    margin-right: auto;
+    text-align:center;
+    margin-top: 90px;
+    margin-bottom: 90px;
+}
+
+#rate-container{
+    margin-left: 300px;
+    margin-right: 300px;
+}
+

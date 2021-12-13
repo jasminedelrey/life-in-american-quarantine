@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Be+Vietnam+Pro&family=Lato&family=Open+Sans:wght@400;500&family=Outfit&display=swap');
+
+body {
+    background-color: #FFFCF4;
+    overflow-x: hidden;
+}
+
+.room-nav {
+    height: 100px;
+    width: 100%;
+    background-color: rgb(27, 27, 27);
+    position: absolute;
+    top: 0;
+}
+
+.room-nav h1 {
+    color: white;
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-size: 70px;
+    margin-top: 0px;
+    text-align: center;
+    
+}
+
+.room-nav:hover {
+    cursor: pointer;
+}
+
+.main #intro h1 {
+    margin-top: 150px;
+    text-align: center;
+    font-size: 90px;
+    font-family:'Anton', sans-serif;
+    margin-bottom: 2px;
+}
+
+#intro {
+    text-align: center;
+    margin-left:auto;
+    margin-right:auto;
+    width: 600px;
+}
+
+p, h2 {
+    font-family: 'Be Vietnam Pro', sans-serif;
+}
+
+.digital-habits {
+    margin-bottom: 130px;
+}
+
+.footer {
+    /* display: inline-block; */
+    margin-left: auto;
+    margin-right: auto;
+    text-align:center;
+    margin-top: 90px;
+    margin-bottom: 90px;
+    font-size: medium;
+    font-family: 'Be Vietnam Pro', sans-serif;
+}
+
+ol {
+    font-family: 'Be Vietnam Pro', sans-serif;
+}

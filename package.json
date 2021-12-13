@@ -1,0 +1,20 @@
+{
+  "name": "pixi-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@pixi/core": "^6.2.0",
+    "@pixi/events": "^6.2.0",
+    "express": "^4.17.1",
+    "pixi-filters": "^4.1.5",
+    "pixi.js": "^6.2.0",
+    "tailwindcss": "^2.2.19"
+  }
+}

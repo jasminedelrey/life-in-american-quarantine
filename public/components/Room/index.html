@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel='stylesheet' type='text/css' href='index.css'>
+  </head>
+
+  <body>
+
+    <embed src="../../music/purrple-cat-green-tea.mp3" loop="true" autostart="true" width= "2" height="0"> </embed>
+    <div id= "pre">
+      <div class= "dialogue-box">
+        <div id="text-here">
+        </div>
+      </div>
+      <div id= "next-message" class= "hidden">
+        <button id= "next-button"> Next </button>
+      </div>
+    </div> 
+
+    <div class="all">
+      <div class= "main">
+
+        <div class= "webcam">
+          <div class="video-outer">
+            <video id="video" height="100%" width="100%" autoplay></video>
+            <p class= "hidden" id ="disabled-text"> Video is disabled </p>
+          </div>
+        </div>
+        
+        <div class= "instructional">
+          
+        </div>
+
+        <div class= "left-button-container">
+          <div id='left'> <img id = left-image src="../../images/larrow.png"> </div>
+        </div>
+
+        <div id='container' style="position: relative; left: 0; top: 0;">
+          <img src = "../../images/room_draw.png" id="room"/>
+          <img src = "../../images/journalt.png" id="journal"/>
+          <img src = "../../images/off_phonet.png" id="phone"/>
+          <div id="ukelele-image">     
+            <div id="ukelele"> 
+            <img src = "../../images/ukelelet.png"/>
+          </div>  
+          </div>
+        </div>
+        
+        <div class= "right-button-container">
+          <div id='right'> <img id = right-image src="../../images/rarrow.png"> </div>
+        </div>
+    
+      </div>
+
+      <div class="tool-bar">
+        <h1 id="time"> 4:00 PM</h1>
+        <div class= "on-icons">
+          <img id= "video-icon" src="../../images/camera-logo.png">
+          <img id= "mic-icon" src="../../images/mic.png">
+          <img id= "red-phone-icon" src="../../images/red-phone-icon.png">
+      </div>
+        <div class="off-icons">
+          <img class= "hidden" id= "off-video-icon" src="../../images/nocamera-logo.png">
+          <img class= "hidden" id= "off-mic-icon" src="../../images/nomic.png">
+        </div>
+      </div>
+
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src= "room.js"></script>
+  </body>
+</html>
