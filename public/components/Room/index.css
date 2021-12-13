@@ -1,8 +1,3 @@
-/* button {
-    display: inline-block;
-    text-align: center;
-    margin: 0;
-} */
 
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Be+Vietnam+Pro&family=Lato&family=Outfit&display=swap');
 
@@ -107,11 +102,6 @@ body {
     z-index: 1;
   }
 
-  /* .tool-bar {
-    display: flex;
-    flex-direction: row;
-  } */
-
   .tool-bar #time {
     font-family: 'Be Vietnam Pro', sans-serif;
     font-size: 23px;
@@ -127,8 +117,6 @@ body {
     position: absolute;
     top: 25px;
     left: 873px;
-    /* display: inline-block; */
-    /* margin-left: 30px; */
   }
 
   .tool-bar .on-icons #video-icon {
@@ -136,8 +124,6 @@ body {
     position: absolute;
     top: 16px;
     left: 750px;
-    /* display: inline-block; */
-    /* margin-left: 30px; */
   }
 
   .tool-bar .on-icons #mic-icon {
@@ -145,8 +131,6 @@ body {
     position: absolute;
     top: 16px;
     left: 810px;
-    /* display: inline-block; */
-    /* margin-left: 30px; */
   }
 
   .tool-bar .off-icons #off-video-icon {
@@ -154,8 +138,6 @@ body {
     position: absolute;
     top: 16px;
     left: 750px;
-    /* display: inline-block; */
-    /* margin-left: 30px; */
   }
 
   .tool-bar .off-icons #off-mic-icon {
@@ -163,36 +145,17 @@ body {
     position: absolute;
     top: 16px;
     left: 810px;
-    /* display: inline-block; */
-    /* margin-left: 30px; */
   }
-
-  /* .tool-bar .on-icons #red-phone-icon:hover {
-    cursor: pointer; */
-    /* display: inline-block; */
-    /* margin-left: 30px; }*/
 
   .tool-bar .on-icons #video-icon:hover {
     cursor: pointer;
-    /* display: inline-block; */
-    /* margin-left: 30px; */
   }
 
-  /* .tool-bar .on-icons #mic-icon:hover {
-    cursor: pointer; */
-    /* display: inline-block; */
-    /* margin-left: 30px;} */
 
   .tool-bar .off-icons #off-video-icon:hover {
     cursor: pointer;
-    /* display: inline-block; */
-    /* margin-left: 30px; */
   }
 
-  /* .tool-bar .off-icons #off-mic-icon:hover {
-    cursor: pointer;
-    /* display: inline-block; */
-    /* margin-left: 30px; }*/
   
   #pre {
     width: 100%;
@@ -277,16 +240,6 @@ body {
     opacity: 0;
     transition: visibility 0s 2s, opacity 2s linear;
   }
-
-  /* #video {
-    position: absolute;
-    width: 540px;
-    height: 200px;
-    border: 5px solid #ccc;
-    background-color: black;
-    top: 20px;
-    left: 620px;
-  } */
 
   .video-outer {
     position: absolute;

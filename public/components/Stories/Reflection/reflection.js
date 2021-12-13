@@ -1,4 +1,6 @@
 anychart.onDocumentReady(function() {
+
+    //Create word cloud for responses through https://www.anychart.com/ 
     var data = [
         {"x": "feel completely alone", "value": 32, "sometimes": 50, "rarely": 12, "never": 4},
         {"x": "dream about post-COVID life", "value": 30, "sometimes": 46, "rarely": 19, "never": 3},
@@ -14,14 +16,8 @@ anychart.onDocumentReady(function() {
     var tooltip = chart.tooltip();
     var formatter = "Out of 165 responses, respondents answered \n Often: {%value}% \n Sometimes: {%sometimes}% \n Rarely: {%rarely}% \n Never: {%never}%"
     tooltip.format(formatter);
-
-    // chart.title('Responses');
     chart.angles([0]);
     chart.width('100%');
-
-    // chart.colorRange(true);
-    // chart.colorRange().length('80%');
-    // chart.legend(false);
 
     chart.container('rate-container');
     chart.draw();

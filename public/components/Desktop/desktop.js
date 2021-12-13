@@ -25,49 +25,6 @@ graphics.x = app.stage.width/2 + 680;
 graphics.y = 990;
 app.stage.addChild(graphics);
 
-//attach the dragstart event handler
-// item.addEventListener('dragstart', dragEnter);
-// item.addEventListener('dragover', dragOver);
-// item.addEventListener('dragLeave', dragLeave);
-// item.addEventListener('drop', drop);
-
-// function dragEnter(e) {
-//     e.preventDefault();
-//     e.target.classList.add('drag-over');
-// }
-
-// function dragOver(e) {
-//     e.preventDefault();
-//     e.target.classList.add('drag-over');
-// }
-
-// function dragLeave(e) {
-//     e.target.classList.remove('drag-over');
-// }
-
-// function drop(e) {
-//     e.target.classList.remove('drag-over');
-
-//     //get draggable element
-//     const id = e.dataTransfer.getData('text/plain');
-//     const draggable = document.getElementById(id);
-
-//     //add it to the drop target
-//     e.target.appendChild(draggable);
-
-//     //display the draggable element
-//     draggable.classList.remove('hide');
-// }
-
-//handling the dragstart
-// function dragStart(e) {
-//     console.log('drag starts...')
-//     e.dataTransfer.setData('text/plain', e.target.id);
-//     setTimeout(() => {
-//         e.target.classList.add('hide');
-//     }, 0);
-// }
-
 PIXI.settings.SCALE_MODE = PIXI.SCALE_MODES.NEAREST;
 let ticker = PIXI.Ticker.shared;
 
@@ -93,15 +50,13 @@ sprite.interactive = true;
 
 // Set the initial position 
 sprite.anchor.set(0.5);
-
-//move sprite to center of screen
-// app.screen.width / 2
-
 //creating folders on desktop
 
 console.log("Width" + app.stage.width);
 console.log("Height" + app.stage.height);
 
+
+//Adding dock icons to screen
 spotify.width = 70;
 spotify.height = 70;
 spotify.x = app.stage.width/2 + 140;
@@ -215,6 +170,7 @@ app.animationUpdate = function(delta) {
 app.ticker.add(app.animationUpdate);
 let selectedTarget;
 
+//Popup screen animation
 if (sprite.on('click', () => {
     sprite.y = 1035;
     app.ticker.remove(app.animationUpdate);

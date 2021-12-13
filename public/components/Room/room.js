@@ -7,6 +7,7 @@ window.onload = function(){
     let scrollCompleted = 0;
     var showButton;
 
+    // for moving left and right in Zoom room container //
     document.getElementById('right').onclick = function clickedLeft() {
         console.log('left is clicked.')
         container.scrollLeft += 30;
@@ -44,6 +45,7 @@ window.onload = function(){
     }
 
     //------Adapted from https://dev.to/stackfindover/how-to-integrate-webcam-using-javascript-3fji ----//
+    // Activate Webcam // 
     var StopWebCam = function () {
         var stream = video.srcObject;
         var tracks = stream.getTracks();
@@ -69,7 +71,7 @@ window.onload = function(){
         }
     }
 
-
+    // Continuation of instructional screen for multiple messages //
     document.getElementById('next-button').onclick = function changeText() {
         hide();
         click++;
@@ -122,17 +124,6 @@ window.onload = function(){
         }
     }
 
-    //     //---- Function not working right now FIXME PLEASE ------
-    //     // function typewriter1(text, index, interv) {
-    //     //     console.log("I am in typewriter1")
-    //     //     if (index >= text.length) {
-    //     //         clearInterval(interv);
-    //     //     } else {
-    //     //         $('#text-here').append(text[index]);
-    //     //         index++;
-    //     //     }
-    //     // }
-    // }
 
 //-------Make time tick!----------//
 let time_bar = document.getElementById('time');
@@ -205,6 +196,7 @@ function slide(direction){
     }, 50);
 }
 
+// Instructional screen before entry to Zoom room //
 let str1 = 'As quarantine’s isolation forced us to adapt to a remote lifestyle, video conferencing windows acted as our main way to talk to, laugh with, and spend time with anyone and anything outside the four corners of our place of isolation.';
 let interval;
 let index = 0;
