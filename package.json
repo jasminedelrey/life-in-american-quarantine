@@ -16,5 +16,9 @@
     "pixi-filters": "^4.1.5",
     "pixi.js": "^6.2.0",
     "tailwindcss": "^2.2.19"
+  },
+  "engines": {
+    "npm" : ">=7.0.0",
+    "node" : ">=16.0.0"
   }
 }
